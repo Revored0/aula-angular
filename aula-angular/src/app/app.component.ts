@@ -4,8 +4,14 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   standalone: false,
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']  // Corrigido aqui
 })
 export class AppComponent {
-  title = 'aula-angular';
+  title = 'Título teste';
+  listaItens = ['maça', 'banana', 'Laranja'];
+  mensagem: string = '';  // Declaração da variável mensagem
+
+  dizerOi() {
+    this.mensagem = 'Olá mundo';
+  }
 }
